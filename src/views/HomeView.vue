@@ -1,11 +1,13 @@
 <script setup>
 import Hero from "@/components/Hero.vue";
+import PortfolioGrid from "@/components/PortfolioGrid.vue";
 </script>
 
 <template>
   <main>
     <section id="about" class="about">
       <Hero />
+      <PortfolioGrid />
     </section>
     <section id="projects" class="projects">
       <h2>My Projects</h2>

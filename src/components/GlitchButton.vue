@@ -48,7 +48,7 @@ function openResume() {
 }
 
 .resume-btn:hover span::before{
-    animation: chitchat linear both 1.5s;
+    animation: chitchat linear both 1.2s;
 }
 
 @keyframes chitchat {

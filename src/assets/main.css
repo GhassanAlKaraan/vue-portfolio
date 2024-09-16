@@ -17,6 +17,10 @@
 
   --color-text: #E4ECFF;
 
+  --container-sm: 800px;
+  --container: 1200px;
+  --container-lg: 1400px;
+
 }
 
 html,body {
@@ -26,7 +30,7 @@ html,body {
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: var(--color-background) url('images/grid-pattern.png') repeat-y;
+  background: var(--color-background) url('images/background/grid-pattern.png') repeat-y;
   background-size: 100% auto;
   transition:
     color 0.5s,

@@ -4,14 +4,12 @@ import App from './App.vue';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare, faCopy } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faArrowUpRightFromSquare);
-
+library.add(faArrowUpRightFromSquare, faCopy);
 
 const app = createApp(App);
 
-// Register FontAwesome component globally
 app.component('font-awesome-icon', FontAwesomeIcon);
 
 app.mount('#app');
