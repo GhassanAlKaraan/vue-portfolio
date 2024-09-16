@@ -1,11 +1,17 @@
 import './assets/main.css'
+import { createApp } from 'vue';
+import App from './App.vue';
 
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
-const app = createApp(App)
+library.add(faArrowUpRightFromSquare);
 
-app.use(router)
 
-app.mount('#app')
+const app = createApp(App);
+
+// Register FontAwesome component globally
+app.component('font-awesome-icon', FontAwesomeIcon);
+
+app.mount('#app');
