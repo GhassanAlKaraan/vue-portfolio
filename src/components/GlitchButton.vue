@@ -48,7 +48,7 @@ function openResume() {
 }
 
 .resume-btn:hover span::before{
-    animation: chitchat linear both 1.2s;
+    animation: chitchat linear both 1.5s;
 }
 
 @keyframes chitchat {
@@ -146,18 +146,3 @@ function openResume() {
     }
 }
 </style>
-
-<script>
-export default {
-  methods: {
-    startAnimation() {
-      this.$el.querySelector('span').style.animation = 'none';
-      this.$el.querySelector('span').offsetHeight; // Trigger reflow
-      this.$el.querySelector('span').style.animation = null;
-    },
-    stopAnimation() {
-      this.$el.querySelector('span').style.animation = 'none';
-    }
-  }
-}
-</script>
