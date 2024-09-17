@@ -7,8 +7,8 @@ import HomeView from "@/views/HomeView.vue";
 <div class="wrapper">
   <div class="background">
     <div class="spotlights">
-      <div class="spotlight-left"><img src="./assets/images/spotlight-left.png" alt="spotlight"></div>
-      <div class="spotlight-right"><img src="./assets/images/spotlight-right.png" alt="spotlight"></div>
+      <div class="spotlight-left"><img src="./assets/images/about/spotlight-left.png" alt="spotlight"></div>
+      <div class="spotlight-right"><img src="./assets/images/about/spotlight-right.png" alt="spotlight"></div>
     </div>
     </div>
   <div class="foreground">

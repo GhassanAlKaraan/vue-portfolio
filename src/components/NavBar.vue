@@ -1,5 +1,5 @@
 <template>
-    <nav>
+    <nav :class="{ hidden: isNavbarHidden }">
         <div class="links">
             <ul>
                 <li v-for="section in sections" :key="section">
@@ -20,7 +20,9 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 
 const sections = ['about', 'projects', 'experience', 'contact'];
-const activeSection = ref('');
+const activeSection = ref('about');
+const isNavbarHidden = ref(false);
+let lastScrollY = 0;
 
 const setActiveSection = () => {
     const scrollY = window.scrollY;
@@ -36,6 +38,19 @@ const setActiveSection = () => {
     activeSection.value = currentSection;
 };
 
+const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+    
+    if (currentScrollY > lastScrollY) {
+        isNavbarHidden.value = true;
+    } else {
+        isNavbarHidden.value = false;
+    }
+
+    lastScrollY = currentScrollY;
+    setActiveSection();
+};
+
 const scrollToSection = (section) => {
     const element = document.getElementById(section);
     if (element) {
@@ -48,10 +63,12 @@ const scrollToSection = (section) => {
 
 onMounted(() => {
     window.addEventListener('scroll', setActiveSection);
+    window.addEventListener('scroll', handleScroll);
 });
 
 onUnmounted(() => {
     window.removeEventListener('scroll', setActiveSection);
+    window.removeEventListener('scroll', handleScroll);
 });
 </script>
 
@@ -60,10 +77,17 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     padding-top: 2%;
     z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav.hidden {
+    transform: translateY(-120%);
 }
 
 .links {
@@ -75,12 +99,12 @@ nav {
     border-radius: 13px;
     border: 1px solid rgba(105, 113, 162, 0.16);
     z-index: 1000;
-    padding: 1rem 2rem;
+    padding: 1rem 0.5rem;
 }
 
 ul {
     display: flex;
-    gap: 1rem;
+    /* gap: 1rem; */
     list-style: none;
 }
 
@@ -96,6 +120,8 @@ a {
     margin: 0 0.5rem;
     position: relative; /* Make sure the a tag can hold pseudo-elements */
     cursor: pointer;
+
+    padding: 1rem 0.5rem;
 }
 
 a::after {
@@ -107,7 +133,7 @@ a::after {
     background-color: transparent;
     border-radius: 100%;
     position: absolute;
-    bottom: -22px;
+    bottom: -8px;
     left: 50%;
     transform: translateX(-50%);
     transition: width 0.3s ease, background-color 0.3s ease;

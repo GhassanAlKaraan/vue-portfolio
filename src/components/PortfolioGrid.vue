@@ -1,17 +1,8 @@
 <script setup>
 import TechstackGrid from "@/components/TechstackGrid.vue";
-
-const copyEmail = () => {
-  const email = 'ghass.karaan@gmail.com';
-  navigator.clipboard.writeText(email)
-    .then(() => {
-      alert('Email address copied to clipboard!');
-    })
-    .catch(err => {
-      console.error('Failed to copy email: ', err);
-    });
-};
+import CopyButton from "@/components/CopyButton.vue";
 </script>
+
 
 <template>
 
@@ -19,20 +10,20 @@ const copyEmail = () => {
         <div class="container">
             <div class="grid">
                 <div class="card div1">
-                    <img src="../assets/images/collab.png" alt="Collab Image" class="collab-img">
-                    <img src="../assets/images/cursor1.png" alt="Cursor1 Image" class="cursor1-img">
-                    <img src="../assets/images/cursor2.png" alt="Cursor2 Image" class="cursor2-img">
+                    <img src="../assets/images/about/collab.png" alt="Collab Image" class="collab-img">
+                    <img src="../assets/images/about/cursor1.png" alt="Cursor1 Image" class="cursor1-img">
+                    <img src="../assets/images/about/cursor2.png" alt="Cursor2 Image" class="cursor2-img">
                     <p class="collab-text">
                         I prioritize client collaboration, fostering open communication
                     </p>
                 </div>
                 <div class="card div2">
-                    <img src="../assets/images/globe.png" alt="Globe Image" class="time-zone-globe-img">
+                    <img src="../assets/images/about/globe.png" alt="Globe Image" class="time-zone-globe-img">
                     <img src="../assets/images/background/bg-bright-grid.png" class="bright-grid-img">
                     <p class="time-zone-text">
                         I'm very flexible with time zone communications
                     </p>
-                    <img src="../assets/images/glass.png" alt="Shiny Glass" class="shiny-glass-img">
+                    <img src="../assets/images/about/glass.png" alt="Shiny Glass" class="shiny-glass-img">
                 </div>
                 <div class="card div3">
                     <div class="text">
@@ -47,23 +38,29 @@ const copyEmail = () => {
                 </div>
                 <div class="card div5">
                     <p>Tech enthusiast with a passion for development.</p>
-                    <img src="../assets/images/tab.png" alt="Tab" class="tab-img">
+                    <img src="../assets/images/about/tab.png" alt="Tab" class="tab-img">
                     <img src="../assets/images/background/bg-bright-grid.png" class="bright-grid-img">
                 </div>
                 <div class="card div6">
                     <img src="../assets/images/background/bg-color-blur.png" class="color-blur-img">
                     <div class="text">
                         <p>Do you want to start a project together?</p>
-                        <button class="copy-email-btn" @click="copyEmail">
-                            <span><font-awesome-icon icon="copy" /></span>  <span>Copy my email address</span>
-                        </button>
+                        <CopyButton />
                     </div>
                 </div>
-                <div class="card div7">7</div>
+                <div class="card div7">
+                    <div class="text">
+                        <p>The inside scoop</p>
+                        <p class="building-text">
+                            Currently building a community website
+                        </p>
+                    </div>
+                    <img src="../assets/images/background/bg-bright-grid.png" class="bright-grid-img">
+                    <img src="../assets/images/background/bg-code-editor.png" class="code-editor-img">
+                </div>
             </div>
         </div>
     </div>
-
 </template>
 
 <style scoped>
@@ -71,7 +68,7 @@ const copyEmail = () => {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem 0;
+    padding-bottom: 4rem;
 }
 
 .wrapper .container {
@@ -226,11 +223,48 @@ const copyEmail = () => {
     position: absolute;
     z-index: 3;
     padding: 1rem;
-    
+
     text-align: center;
     color: #fff;
 }
 
+.div7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.div7 .code-editor-img {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    z-index: 1;
+}
+
+.div7 .text {
+    position: absolute;
+    z-index: 3;
+    left: 0;    
+    margin-left: 2rem;
+}
+
+.div7 p {
+    text-transform: uppercase;
+    color: #C1C2D3;
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+}
+
+.div7 .building-text {
+    max-width: 70%;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    z-index: 3;
+}
 
 /* Grid layout */
 
@@ -296,21 +330,4 @@ const copyEmail = () => {
     object-fit: center/cover;
 }
 
-.copy-email-btn {
-    color: #E4ECFF;
-    border: 1px solid rgba(105, 113, 162, 0.16);
-    border-radius: 7px;
-    padding: 0.5rem 1rem;
-    width: max-content;
-    background: linear-gradient(to right, #161A31, #06091F);
-    font-size: 14px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-.copy-email-btn:hover {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        transition: box-shadow 0.3s ease-in-out;
-    
-}
 </style>

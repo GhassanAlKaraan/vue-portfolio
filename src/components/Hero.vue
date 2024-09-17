@@ -16,8 +16,8 @@ import GlitchButton from "@/components/GlitchButton.vue";
 </template>
 
 <style scoped>
-.about .hero {
-    padding: 5rem 0;
+.hero {
+    padding: 10rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;

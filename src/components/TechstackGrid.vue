@@ -6,7 +6,7 @@
         <div class="card div3">Dart</div>
         <div class="card div4">Javascript</div>
         <div class="card div5">ExpressJs</div>
-        <div class="card div6">SQL/No SQL</div>
+        <div class="card div6">SQL / noSQL</div>
         <div class="card div7"></div>
         <div class="card div8"></div>
     </div>
