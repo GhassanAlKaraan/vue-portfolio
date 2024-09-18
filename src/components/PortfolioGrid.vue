@@ -237,8 +237,8 @@ import CopyButton from "@/components/CopyButton.vue";
 
 .div7 .code-editor-img {
     position: absolute;
-    bottom: -30px;
-    right: 0;
+    bottom: -60px;
+    right: -120px;
     z-index: 1;
 }
 

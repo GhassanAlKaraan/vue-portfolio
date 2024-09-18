@@ -39,7 +39,7 @@ const copyEmail = () => {
     background: linear-gradient(to right, #161A31, #06091F);
     font-size: 14px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
     width: 200px;
     /* Set a fixed width */
     height: 40px;
@@ -61,7 +61,7 @@ const copyEmail = () => {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
     white-space: nowrap;
 }
 
