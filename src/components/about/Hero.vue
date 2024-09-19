@@ -1,5 +1,5 @@
 <script setup>
-import GlitchButton from "@/components/GlitchButton.vue";
+import GlitchButton from "@/components/about/GlitchButton.vue";
 </script>
 
 <template>

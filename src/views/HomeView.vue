@@ -1,7 +1,9 @@
 <script setup>
-import Hero from "@/components/Hero.vue";
-import PortfolioGrid from "@/components/PortfolioGrid.vue";
-import Projects from "@/components/Projects.vue";
+import Hero from "@/components/about/Hero.vue";
+import PortfolioGrid from "@/components/about/PortfolioGrid.vue";
+import ProjectsGrid from "@/components/projects/ProjectsGrid.vue";
+import MovingText from "@/components/projects/MovingText.vue";
+import ExperienceGrid from "@/components/experience/ExperienceGrid.vue";
 </script>
 
 <template>
@@ -11,32 +13,11 @@ import Projects from "@/components/Projects.vue";
       <PortfolioGrid />
     </section>
     <section id="projects" class="projects">
-      <Projects />
+      <ProjectsGrid />
+      <MovingText/>
     </section>
     <section id="experience" class="experience">
-      <h2>Work Experience</h2>
-      <div>
-        <h3>Company XYZ</h3>
-        <p>Position: Senior Software Developer</p>
-        <p>Duration: 2018 - Present</p>
-        <p>Description: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.</p>
-      </div>
-      <div>
-        <h3>Company ABC</h3>
-        <p>Position: Junior Software Developer</p>
-        <p>Duration: 2015 - 2018</p>
-        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.</p>
-      </div>
-      <p>Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Nisi scelerisque eu ultrices vitae auctor
-        eu augue ut lectus. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Dictum varius duis at
-        consectetur lorem. Nisi vitae suscipit tellus mauris a diam maecenas sed enim ut. Cursus sit amet dictum sit
-        amet. Egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices. Sit amet porttitor eget dolor morbi
-        non.</p>
+      <ExperienceGrid />
     </section>
     <section id="contact" class="about">
       <h2>My Contact</h2>

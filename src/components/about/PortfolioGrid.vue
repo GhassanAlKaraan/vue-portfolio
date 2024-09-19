@@ -1,6 +1,6 @@
 <script setup>
-import TechstackGrid from "@/components/TechstackGrid.vue";
-import CopyButton from "@/components/CopyButton.vue";
+import TechstackGrid from "@/components/about/TechstackGrid.vue";
+import CopyButton from "@/components/about/CopyButton.vue";
 </script>
 
 
@@ -10,20 +10,20 @@ import CopyButton from "@/components/CopyButton.vue";
         <div class="container">
             <div class="grid">
                 <div class="card div1">
-                    <img src="../assets/images/about/collab.png" alt="Collab Image" class="collab-img">
-                    <img src="../assets/images/about/cursor1.png" alt="Cursor1 Image" class="cursor1-img">
-                    <img src="../assets/images/about/cursor2.png" alt="Cursor2 Image" class="cursor2-img">
+                    <img src="@/assets/images/about/collab.png" alt="Collab Image" class="collab-img">
+                    <img src="@/assets/images/about/cursor1.png" alt="Cursor1 Image" class="cursor1-img">
+                    <img src="@/assets/images/about/cursor2.png" alt="Cursor2 Image" class="cursor2-img">
                     <p class="collab-text">
                         I prioritize client collaboration, fostering open communication
                     </p>
                 </div>
                 <div class="card div2">
-                    <img src="../assets/images/about/globe.png" alt="Globe Image" class="time-zone-globe-img">
-                    <img src="../assets/images/background/bg-bright-grid.png" class="bright-grid-img">
+                    <img src="@/assets/images/about/globe.png" alt="Globe Image" class="time-zone-globe-img">
+                    <img src="@/assets/images/background/bg-bright-grid.png" class="bright-grid-img">
                     <p class="time-zone-text">
                         I'm very flexible with time zone communications
                     </p>
-                    <img src="../assets/images/about/glass.png" alt="Shiny Glass" class="shiny-glass-img">
+                    <img src="@/assets/images/about/glass.png" alt="Shiny Glass" class="shiny-glass-img">
                 </div>
                 <div class="card div3">
                     <div class="text">
@@ -38,11 +38,11 @@ import CopyButton from "@/components/CopyButton.vue";
                 </div>
                 <div class="card div5">
                     <p>Tech enthusiast with a passion for development.</p>
-                    <img src="../assets/images/about/tab.png" alt="Tab" class="tab-img">
-                    <img src="../assets/images/background/bg-bright-grid.png" class="bright-grid-img">
+                    <img src="@/assets/images/about/tab.png" alt="Tab" class="tab-img">
+                    <img src="@/assets/images/background/bg-bright-grid.png" class="bright-grid-img">
                 </div>
                 <div class="card div6">
-                    <img src="../assets/images/background/bg-color-blur.png" class="color-blur-img">
+                    <img src="@/assets/images/background/bg-color-blur.png" class="color-blur-img">
                     <div class="text">
                         <p>Do you want to start a project together?</p>
                         <CopyButton />
@@ -55,8 +55,8 @@ import CopyButton from "@/components/CopyButton.vue";
                             Currently building a community website
                         </p>
                     </div>
-                    <img src="../assets/images/background/bg-bright-grid.png" class="bright-grid-img">
-                    <img src="../assets/images/background/bg-code-editor.png" class="code-editor-img">
+                    <img src="@/assets/images/background/bg-bright-grid.png" class="bright-grid-img">
+                    <img src="@/assets/images/background/bg-code-editor.png" class="code-editor-img">
                 </div>
             </div>
         </div>
@@ -80,6 +80,12 @@ import CopyButton from "@/components/CopyButton.vue";
     border-radius: 23px;
     overflow: hidden;
     position: relative;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(207, 207, 207, 0.2);
 }
 
 .card p {
