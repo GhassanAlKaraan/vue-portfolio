@@ -12,12 +12,14 @@ import GithubLink from "@/components/projects/GithubLink.vue";
 
                 <!-- Project Card 1 -->
                 <div class="card">
-                    <div class="project-image">
-                        <img src="@/assets/images/background/shiny-glass-2.png" class="img-1" />
-                        <img src="@/assets/images/projects/portfolio-project.png" class="img-2" />
+                    <div class="card-content">
+                        <div class="project-image">
+                            <img src="@/assets/images/background/shiny-glass-2.png" class="img-1" />
+                            <img src="@/assets/images/projects/portfolio-project.png" class="img-2" />
+                        </div>
+                        <h4 class="project-title">My Personal Portfolio</h4>
+                        <p>Developed this web portfolio to highlight my skills and experience.</p>
                     </div>
-                    <h4 class="project-title">My Personal Portfolio</h4>
-                    <p>Developed this web portfolio to highlight my skills and experience.</p>
                     <div class="tech-used">
                         <div class="tech-stack-icons">
                             <img src="@/assets/icons/vue.svg" alt="Vue.js" class="tech-icon">
@@ -33,13 +35,15 @@ import GithubLink from "@/components/projects/GithubLink.vue";
 
                 <!-- Project Card 2 -->
                 <div class="card">
-                    <div class="project-image">
-                        <img src="@/assets/images/background/shiny-glass-2.png" class="img-1" />
-                        <img src="@/assets/images/projects/ecommerce-project.png" class="img-2-mobile-app" />
+                    <div class="card-content">
+                        <div class="project-image">
+                            <img src="@/assets/images/background/shiny-glass-2.png" class="img-1" />
+                            <img src="@/assets/images/projects/ecommerce-project.png" class="img-2-mobile-app" />
+                        </div>
+                        <h4 class="project-title">Gas Station E-commerce App</h4>
+                        <p>Crafted an e-commerce app with Firebase integration for user authentication and inventory
+                            management, featuring an admin panel for product and order management.</p>
                     </div>
-                    <h4 class="project-title">Gas Station E-commerce App</h4>
-                    <p>Crafted an e-commerce app with Firebase integration for user authentication and inventory
-                        management, featuring an admin panel for product and order management.</p>
                     <div class="tech-used">
                         <div class="tech-stack-icons">
                             <img src="@/assets/icons/flutter.svg" alt="Flutter" class="tech-icon">
@@ -52,7 +56,7 @@ import GithubLink from "@/components/projects/GithubLink.vue";
 
                 <!-- Project Card 3 -->
                 <div class="card">
-                    <div>
+                    <div class="card-content">
                         <div class="project-image">
                             <img src="@/assets/images/background/shiny-glass-2.png" class="img-1" />
                             <img src="@/assets/images/projects/smart-piggy-project.png" class="img-2-mobile-app-2" />
@@ -74,13 +78,15 @@ import GithubLink from "@/components/projects/GithubLink.vue";
 
                 <!-- Project Card 4 -->
                 <div class="card">
-                    <div class="project-image">
+                    <div class="card-content">
+                        <div class="project-image">
                         <img src="@/assets/images/background/shiny-glass-2.png" class="img-1" />
                         <img src="@/assets/images/projects/vue-demo-project.png" class="img-2" />
                     </div>
                     <h4 class="project-title">CRUD and Auth demo: Web App</h4>
                     <p>Learned to develop a full-stack web app with authentication and CRUD functionality using the MEVN
                         stack.</p>
+                    </div>
                     <div class="tech-used">
                         <div class="tech-stack-icons">
                             <img src="@/assets/icons/vue.svg" alt="Vue" class="tech-icon">
@@ -134,8 +140,6 @@ import GithubLink from "@/components/projects/GithubLink.vue";
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-
     border: 1px solid rgba(105, 113, 162, 0.16);
     border-radius: 23px;
     overflow: hidden;
@@ -144,6 +148,13 @@ import GithubLink from "@/components/projects/GithubLink.vue";
     padding: 1.5rem;
     color: #fff;
     transition: all 0.3s ease;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 100%;
 }
 
 .card:hover {
@@ -194,7 +205,7 @@ import GithubLink from "@/components/projects/GithubLink.vue";
     object-fit: cover;
     transform: rotate(5deg);
     width: 100%;
-    filter: brightness(0.8);
+    filter: brightness(0.9);
 
 }
 
@@ -205,7 +216,7 @@ import GithubLink from "@/components/projects/GithubLink.vue";
     object-fit: cover;
     transform: rotate(5deg);
     width: 100%;
-    filter: brightness(0.8);
+    filter: brightness(0.9);
 
 }
 

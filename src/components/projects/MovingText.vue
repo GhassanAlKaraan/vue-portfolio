@@ -25,6 +25,7 @@ article {
     overflow: hidden;
     position: relative;
     min-height: 4em;
+    margin-bottom: 2rem;
 }
 
 article p {

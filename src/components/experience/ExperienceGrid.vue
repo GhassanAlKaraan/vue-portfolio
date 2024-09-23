@@ -10,8 +10,8 @@
                 <div class="card">
                     <img src="@/assets/images/experience/software-dev.png" alt="Software Developer">
                     <div class="content">
-                        <h4 class="experience-title">Software Developer - GTS</h4>
-                        <p>Developed this web portfolio to highlight my skills and experience.</p>
+                        <h4 class="experience-title">Software Developer <span class="at-symbol">@</span> GTS</h4>
+                        <p>Contributed to JD Edwards ERP customization and worked on Odoo, Flutter projects.</p>
                     </div>
 
                 </div>
@@ -20,29 +20,29 @@
 
                 <!-- Experience Card 2 -->
                 <div class="card">
+                    <img src="@/assets/images/experience/mobile-dev.png" alt="Mobile Developer">
                     <div class="content">
-                        <h4 class="experience-title">Mobile App Dev - Kizana.co</h4>
-                        <p>Crafted an e-commerce app with Firebase integration for user authentication and inventory.
-                        </p>
+                        <h4 class="experience-title">Mobile App Dev <span class="at-symbol">@</span> Kizana.co</h4>
+                        <p>Lead frontend developer for Kizana app, managing features, maintenance, and UI/UX improvements.</p>
 
                     </div>
                 </div>
 
                 <!-- Experience Card 3 -->
                 <div class="card">
+                    <img src="@/assets/images/experience/freelancer.png" alt="Freelance Developer">
                     <div class="content">
                         <h4 class="experience-title">Freelance App Dev</h4>
-                        <p>Worked on this Flutter application that tracks your income and expenses through audio
-                            commands.</p>
+                        <p>Collaborated with clients on mobile and web projects, delivering customized solutions.</p>
                     </div>
                 </div>
 
                 <!-- Experience Card 4 -->
                 <div class="card">
+                    <img src="@/assets/images/experience/noc.png" alt="NOC Engineer">
                     <div class="content">
-                        <h4 class="experience-title">NOC Support Engineer - MobiMind</h4>
-                        <p>Learned to develop a fullcation and CRUD functionality using the MEVN
-                            stack.</p>
+                        <h4 class="experience-title">NOC Engineer <span class="at-symbol">@</span> MobiMind</h4>
+                        <p>Provided technical support for 200+ users, managing network and server infrastructure.</p>
                     </div>
                 </div>
             </div>
@@ -87,6 +87,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     gap: 1.5rem;
 
     border: 1px solid rgba(105, 113, 162, 0.16);
@@ -96,7 +97,7 @@
     overflow: hidden;
     position: relative;
     background: linear-gradient(to bottom right, #04071D, #0C0E23);
-    padding: 2rem 2.5rem;
+    padding: 1.5rem 2rem;
     color: #fff;
     transition: all 0.3s ease;
 }
@@ -116,6 +117,10 @@
     transform: translateY(-5px);
     box-shadow: 0 0 10px rgba(207, 207, 207, 0.2);
 } */
+
+.card .at-symbol {
+    color: var(--color-heading-secondary);
+}
 
 .experience-title {
     font-size: 24px;
