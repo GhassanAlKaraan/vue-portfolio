@@ -35,7 +35,7 @@ const copyEmail = () => {
     color: #E4ECFF;
     border: 1px solid rgba(105, 113, 162, 0.16);
     border-radius: 7px;
-    padding: 0.75rem 2rem;
+    /* padding: 0.75rem 2rem; */
     background: linear-gradient(to right, #161A31, #06091F);
     font-size: 14px;
     cursor: pointer;
@@ -80,5 +80,14 @@ const copyEmail = () => {
     opacity: 1;
     transform: translate(-50%, -50%);
     /* Move up */
+}
+
+@media screen and (max-width: 1024px) {
+    .copy-email-btn {
+        width: 190px;
+    /* Set a fixed width */
+    height: 34px;
+    }
+    
 }
 </style>

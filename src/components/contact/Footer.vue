@@ -1,20 +1,31 @@
+<script setup>
+function openLinkedIn() {
+    window.open('https://linkedin.com/in/ghassan-alkaraan', '_blank');
+}
+function openGithub() {
+    window.open('https://github.com/ghassanalkaraan', '_blank');
+}
+function openEmail() {
+    window.open('mailto:ghass.karaan@gmail.com', '_blank');
+}
+</script>
 <template>
     <footer class="footer">
         <div class="footer-content">
             <p>Copyright ©2024 Ghassan Al Karaan</p>
-            
+
             <div class="tech-used">
                 <div class="tech-stack-icons">
-                    <img src="@/assets/icons/email.svg" alt="Mongo" class="tech-icon">
-                    <img src="@/assets/icons/linkedin.svg" alt="Node.js" class="tech-icon">
-                    <img src="@/assets/icons/github.svg" alt="Express.js" class="tech-icon">
+                    <img src="@/assets/icons/linkedin.svg" alt="Linkedin" class="social-icon" @click="openLinkedIn">
+                    <img src="@/assets/icons/github.svg" alt="Github" class="social-icon" @click="openGithub">
+                    <img src="@/assets/icons/email.svg" alt="Email" class="social-icon" @click="openEmail">
                 </div>
             </div>
         </div>
     </footer>
 </template>
 
-<style scoped> 
+<style scoped>
 .footer {
     height: 70px;
     color: white;
@@ -30,28 +41,22 @@
     justify-content: space-between;
 }
 
-
-
 .tech-used {
     justify-content: center;
     align-items: center;
 }
 
-.tech-used .tech-stack-icons .tech-icon {
-    /* border: 1px solid rgba(105, 113, 162, 0.16); */
-    border-radius: 100%;
-    background-color: #FFFFFFFF;
+.tech-used .tech-stack-icons .social-icon {
     width: 34px;
     height: 34px;
-    padding: 4px;
 
-    margin-right: 10px;
+    margin-right: 12px;
 
     transition: all 0.2s ease;
     overflow: visible;
 }
 
-.tech-used .tech-stack-icons .tech-icon:hover {
-    background-color: #04071D;
+.tech-used .tech-stack-icons .social-icon:hover {
+    transform: translateY(-4px);
 }
 </style>

@@ -73,6 +73,7 @@ import CopyButton from "@/components/about/CopyButton.vue";
 
 .wrapper .container {
     max-width: 1100px;
+    padding: 0 3rem;
 }
 
 .card {
@@ -242,6 +243,7 @@ import CopyButton from "@/components/about/CopyButton.vue";
 }
 
 .div7 .code-editor-img {
+    filter: contrast(0.5);
     position: absolute;
     bottom: -60px;
     right: -120px;
@@ -251,7 +253,7 @@ import CopyButton from "@/components/about/CopyButton.vue";
 .div7 .text {
     position: absolute;
     z-index: 3;
-    left: 0;    
+    left: 0;
     margin-left: 2rem;
 }
 
@@ -336,4 +338,107 @@ import CopyButton from "@/components/about/CopyButton.vue";
     object-fit: center/cover;
 }
 
+@media screen and (max-width: 1024px) {
+    .div1 .collab-text {
+        font-size: 24px;
+    }
+
+    .div2 .time-zone-text {
+        margin-top: 2rem;
+        font-size: 20px;
+    }
+
+    .div3 .text {
+        max-width: 50%;
+    }
+
+    .div3 .tech-stack-text {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+    .div5 p {
+        padding: 1.5rem 1rem;
+        font-size: 18px;
+    }
+
+    .div6 p {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .div6 .text {
+        width: 100%;
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .div7 .building-text {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .div1,
+    .div2,
+    .div3,
+    .div5,
+    .div6,
+    .div7 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .div1 .cursor1-img,
+    .div1 .cursor2-img {
+        display: none;
+    }
+
+    .div1 .collab-text {
+        font-size: 20px;
+        margin: 1rem;
+    }
+
+    .div5 p {
+        padding: 3rem 1rem;
+    }
+
+
+    .div6 .text {
+        width: 100%;
+        gap: 2rem;
+        padding: 3rem 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* .grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    } */
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div1 .collab-text {
+        max-width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    .div2, .div3, .div5, .div6, .div7 {
+        width: 100%;
+        min-height: 180px;
+    }
+
+    .wrapper .container {
+        padding: 0 2rem;}
+    
+}
 </style>

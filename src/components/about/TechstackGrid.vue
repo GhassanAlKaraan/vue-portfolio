@@ -76,4 +76,12 @@
     grid-column-start: 2;
     grid-row-start: 1;
 }
+
+@media  screen and (max-width: 768px) {
+    .card {
+        padding: 0.5rem;
+        font-size: 12px;
+    }
+    
+}
 </style>

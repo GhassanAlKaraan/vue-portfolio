@@ -17,7 +17,7 @@ import GlitchButton from "@/components/about/GlitchButton.vue";
 
 <style scoped>
 .hero {
-    padding: 10rem 0;
+    padding: 10rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,12 +32,14 @@ import GlitchButton from "@/components/about/GlitchButton.vue";
     font-size: 16px;
     TEXT-TRANSFORM: UPPERCASE;
     color: #E4ECFF;
+    text-align: center;
 }
 
 .hero .hero-about {
     font-weight: 200;
     font-size: 24px;
     color: #E4ECFF;
+    text-align: center;
 }
 
 .hero .hero-title {
@@ -69,4 +71,47 @@ import GlitchButton from "@/components/about/GlitchButton.vue";
     background: rgba(4, 7, 29);
     box-shadow: 0 0 1000px 50px rgba(255, 255, 255, 0.5);
 }
+
+@media screen and (max-width: 1024px) {
+    .hero .hero-title {
+        font-size: 60px;
+    }
+
+    .hero .hero-role {
+        font-size: 16px;
+    }
+
+    .hero .hero-about {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 7rem 2rem;
+    }
+    .hero .hero-title {
+        font-size: 50px;
+    }
+    .hero .hero-role {
+        font-size: 14px;
+    }
+
+    .hero .hero-about {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .hero .hero-title {
+        font-size: 40px;
+    }
+    .hero .hero-role {
+        font-size: 12px;
+    }
+
+    .hero .hero-about {
+        font-size: 18px;
+    }
+    
+    }
 </style>

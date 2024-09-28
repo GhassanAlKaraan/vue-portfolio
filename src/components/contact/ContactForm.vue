@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+function submitForm() {
+    //TODO : Submit form logic here
+}
+</script>
 
 <template>
     <div class="wrapper">
@@ -92,7 +96,7 @@ form {
     justify-content: center;
     
     gap: 1rem;
-    width: 700px;
+    width: 600px;
     position: relative;
     z-index: 2;
 
@@ -104,12 +108,11 @@ form {
     flex-direction: column;
 }
 
-label {
-    /* margin-bottom: 0.5rem; */
+/* label {
     font-weight: 200;
     font-size: 24px;
     color: #E4ECFF;
-}
+} */
 
 input, textarea {
     padding: 0.5rem;
@@ -134,24 +137,6 @@ textarea {
     resize: vertical;
     font-family: inherit;
 }
-
-/* .submit-btn {
-    align-self: flex-start;
-    padding: 0.75rem 1.5rem;
-    background-color: black;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-
-}
-
-.submit-btn:hover {
-    background-color: darken(var(--color-heading-secondary), 10%);
-} */
-
- /* Submit Button */
 
  .submit-btn {
     background: linear-gradient(to left, rgba(4, 7, 29), rgba(16, 18, 48));
@@ -186,7 +171,6 @@ textarea {
 
 .submit-btn:hover {
     background: rgba(4, 7, 29);
-    /* box-shadow: 0 0 1000px 50px rgba(255, 255, 255, 0.5); */
 }
 
 .submit-btn:hover span::before {

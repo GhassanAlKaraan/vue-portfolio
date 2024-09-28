@@ -113,11 +113,13 @@ import GithubLink from "@/components/projects/GithubLink.vue";
 }
 
 .wrapper .container {
+    padding: 0 3rem;
     max-width: 1100px;
     width: 100%;
 }
 
 .projects-heading {
+    text-align: center;
     margin-bottom: 2rem;
 }
 
@@ -266,4 +268,86 @@ p {
 .tech-used .tech-stack-icons .tech-icon:hover {
     background-color: #04071D;
 }
+
+@media screen and (max-width: 1024px) {
+    .projects-heading h2 {
+        font-size: 36px;
+    }
+    .project-image .img-2-mobile-app-2 {
+        top: -40px;
+    }
+
+    .project-image .img-2-mobile-app {
+        top: 0%;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .projects-heading {
+        padding: 0 1rem;
+    }
+    .projects-heading h2 {
+        font-size: 26px;
+    }
+
+    .container .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    .project-image .img-2-mobile-app-2 {
+        top: -45%;
+    }
+    
+}
+
+
+@media screen and (max-width: 580px) {
+    .tech-used .tech-stack-icons .tech-icon {
+    width: 32px;
+    height: 32px;
+    
+}
+
+p {
+    font-size: 1rem ;
+}
+.btn {
+    font-size: 0.8rem;
+}
+.project-image .img-2-mobile-app-2 {
+        top: -40px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .project-title {
+        font-size: 1.5rem;
+        line-height: 1.1;
+    }
+    .card-content p {
+        font-size: 0.8rem;
+    }
+    .github-link {
+        font-size: 0.8rem;}
+    .project-image {
+        height: 200px;
+    } 
+.project-image {
+    max-height: 150px;
+}
+    .project-image .img-2-mobile-app {
+        top: 0;
+    }
+    .project-image .img-2-mobile-app-2 {
+        top: -20px;
+    }
+    .card {
+        padding: 1rem;
+    }
+    .wrapper{
+        padding: 2rem 0;
+    }
+    .wrapper .container {
+        padding: 0 2rem;}
+}
+
+
 </style>
