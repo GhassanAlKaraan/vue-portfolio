@@ -6,19 +6,19 @@
             <p>Reach out to me today and let's discuss how I can help you achieve your goals.</p>
         </div>
         <div class="container">
-            <form name="contact" netlify>
+            <form name="contact" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact">
                 <div class="form-group">
                     <label for="name" class="sr-only">Name</label>
-                    <input type="text" id="name" v-model="name" placeholder="Name" required>
+                    <input type="text" id="name" name="name" v-model="name" placeholder="Name" required>
                 </div>
                 <div class="form-group">
                     <label for="email" class="sr-only">Email</label>
-                    <input type="email" id="email" v-model="email" placeholder="Email" required>
+                    <input type="email" id="email" name="email" v-model="email" placeholder="Email" required>
                 </div>
                 <div class="form-group">
                     <label for="message" class="sr-only">Your Message</label>
-                    <textarea id="message" v-model="message" placeholder="Your Message" required></textarea>
+                    <textarea id="message" name="message" v-model="message" placeholder="Your Message" required></textarea>
                 </div>
                 <button type="submit" class="submit-btn"><span>Send Message</span></button>
             </form>
