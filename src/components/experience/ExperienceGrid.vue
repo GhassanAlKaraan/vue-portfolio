@@ -23,7 +23,8 @@
                     <img src="@/assets/images/experience/mobile-dev.png" alt="Mobile Developer">
                     <div class="content">
                         <h4 class="experience-title">Mobile App Dev <span class="at-symbol">@</span> Kizana.co</h4>
-                        <p>Lead frontend developer for Kizana app, managing features, maintenance, and UI/UX improvements.</p>
+                        <p>Lead frontend developer for Kizana app, managing features, maintenance, and UI/UX
+                            improvements.</p>
 
                     </div>
                 </div>
@@ -65,6 +66,7 @@
 }
 
 .experiences-heading {
+    text-align: center;
     margin-bottom: 2rem;
 }
 
@@ -81,6 +83,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+    margin: 3rem;
 }
 
 .card {
@@ -132,5 +135,75 @@ p {
     font-size: 16px;
     color: #BEC1DD;
     margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .experiences-heading h2 {
+        font-size: 36px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .experiences-heading {
+        padding: 0 1rem;
+    }
+
+    .experiences-heading h2 {
+        font-size: 26px;
+    }
+
+    .container .experiences-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media screen and (max-width: 580px) {
+
+    p {
+        font-size: 1rem;
+    }
+
+    .container .experiences-grid {
+        margin: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .card .content h4,
+    .experience-title {
+        font-size: 1.5rem;
+        line-height: 1.1;
+    }
+
+    .card .content p {
+        font-size: 0.8rem;
+    }
+
+    .card img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+
+    .wrapper {
+        padding: 2rem 0;
+    }
+
+    .wrapper .container {
+        padding: 0 2rem;
+    }
+
+    .container .experiences-grid {
+        margin: 0.5rem;
+    }
 }
 </style>

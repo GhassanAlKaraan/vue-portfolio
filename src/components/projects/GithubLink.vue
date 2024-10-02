@@ -1,7 +1,5 @@
 <script setup>
-import { defineProps } from 'vue';
 
-// Defining the props with a default link URL
 const props = defineProps({
     linkUrl: {
         type: String,

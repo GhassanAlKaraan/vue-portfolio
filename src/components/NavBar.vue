@@ -154,9 +154,10 @@ a:hover {
     color: white;
 }
 
-@media (max-width: 480px) {
-    .logo {
-        display: none;
+@media screen and (max-width: 480px) {
+
+    a{
+        font-size: 14px;
     }
 }
 </style>

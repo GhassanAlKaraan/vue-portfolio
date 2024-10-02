@@ -1,9 +1,3 @@
-<script setup>
-function submitForm() {
-    //TODO : Submit form logic here
-}
-</script>
-
 <template>
     <div class="wrapper">
         <div class="contact-heading">
@@ -12,7 +6,8 @@ function submitForm() {
             <p>Reach out to me today and let's discuss how I can help you achieve your goals.</p>
         </div>
         <div class="container">
-            <form @submit.prevent="submitForm">
+            <form name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
                 <div class="form-group">
                     <input type="text" id="name" v-model="name" placeholder="Name" required>
                 </div>
@@ -96,7 +91,7 @@ form {
     justify-content: center;
     
     gap: 1rem;
-    width: 600px;
+    width: 60%;
     position: relative;
     z-index: 2;
 
@@ -269,6 +264,77 @@ textarea {
     100% {
         content: "";
         right: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contact-heading h2 {
+        font-size: 36px;
+    }
+    form {
+        width: 70%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .contact-heading {
+        padding: 0 1rem;
+    }
+
+    .contact-heading h2 {
+        font-size: 26px;
+    }
+    form {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 580px) {
+
+    p {
+        font-size: 1rem;
+    }
+
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .contact-heading h2 {
+        max-width: 90%;}
+
+    .contact-heading p {
+        font-size: 0.8rem;
+    }
+
+    .card img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+
+    .wrapper {
+        padding: 2rem 0;
+    }
+
+    .wrapper .container {
+        padding: 0 2rem;
+    }
+
+    .container .experiences-grid {
+        margin: 0.5rem;
+    }
+
+    form {
+        width: 100%;
+        margin: 0 1rem;
     }
 }
 </style>

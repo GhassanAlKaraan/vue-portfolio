@@ -37,6 +37,7 @@ function openEmail() {
 .footer-content {
     max-width: 1100px;
     width: 100%;
+    margin: 0 1rem;
     display: flex;
     justify-content: space-between;
 }
@@ -58,5 +59,22 @@ function openEmail() {
 
 .tech-used .tech-stack-icons .social-icon:hover {
     transform: translateY(-4px);
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        margin-bottom: 1rem;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }
+    .tech-used .tech-stack-icons .social-icon {
+    width: 30px;
+    height: 30px;}
+    
 }
 </style>
