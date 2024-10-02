@@ -9,12 +9,15 @@
             <form name="contact" netlify>
                 <input type="hidden" name="form-name" value="contact">
                 <div class="form-group">
+                    <label for="name" class="sr-only">Name</label>
                     <input type="text" id="name" v-model="name" placeholder="Name" required>
                 </div>
                 <div class="form-group">
+                    <label for="email" class="sr-only">Email</label>
                     <input type="email" id="email" v-model="email" placeholder="Email" required>
                 </div>
                 <div class="form-group">
+                    <label for="message" class="sr-only">Your Message</label>
                     <textarea id="message" v-model="message" placeholder="Your Message" required></textarea>
                 </div>
                 <button type="submit" class="submit-btn"><span>Send Message</span></button>
@@ -103,11 +106,17 @@ form {
     flex-direction: column;
 }
 
-/* label {
-    font-weight: 200;
-    font-size: 24px;
-    color: #E4ECFF;
-} */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
 
 input, textarea {
     padding: 0.5rem;
