@@ -6,7 +6,7 @@
             <p>Reach out to me today and let's discuss how I can help you achieve your goals.</p>
         </div>
         <div class="container">
-            <form name="contact" method="POST" data-netlify="true">
+            <form name="contact" netlify>
                 <input type="hidden" name="form-name" value="contact">
                 <div class="form-group">
                     <input type="text" id="name" v-model="name" placeholder="Name" required>
