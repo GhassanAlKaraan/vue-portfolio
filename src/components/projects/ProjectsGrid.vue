@@ -159,10 +159,10 @@ import GithubLink from "@/components/projects/GithubLink.vue";
     height: 100%;
 }
 
-.card:hover {
+/* .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 10px rgba(207, 207, 207, 0.2);
-}
+} */
 
 .project-image {
     display: flex;
