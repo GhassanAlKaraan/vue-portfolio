@@ -201,7 +201,7 @@ import CopyButton from "@/components/about/CopyButton.vue";
 .div5 p {
     position: absolute;
     z-index: 3;
-    padding: 2rem;
+    /* padding: 2rem; */
     text-align: left;
     font-size: 24px;
     font-weight: 700;
@@ -218,7 +218,7 @@ import CopyButton from "@/components/about/CopyButton.vue";
 .div6 p {
     font-size: 24px;
     font-weight: 700;
-    width: 60%;
+    /* width: 60%; */
 }
 
 .div6 .text {
