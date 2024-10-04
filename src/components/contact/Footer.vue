@@ -52,7 +52,7 @@ function openEmail() {
     height: 34px;
 
     margin-right: 12px;
-
+    cursor: pointer;
     transition: all 0.2s ease;
     overflow: visible;
 }
@@ -73,6 +73,7 @@ function openEmail() {
         gap: 1rem;
     }
     .tech-used .tech-stack-icons .social-icon {
+        
     width: 30px;
     height: 30px;}
     
