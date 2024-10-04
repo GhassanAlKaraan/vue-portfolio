@@ -26,11 +26,13 @@ article {
     position: relative;
     min-height: 4em;
     margin-bottom: 2rem;
+
+    border-top: 1px solid white;
 }
 
 article p {
-    text-decoration: underline;
-    font-size: 18px;
+    /* text-decoration: underline; */
+    font-size: 24px;
 }
 
 p:hover {
