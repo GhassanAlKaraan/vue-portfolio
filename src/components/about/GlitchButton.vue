@@ -42,12 +42,12 @@ function openResume() {
     background: inherit;
 }
 
-.resume-btn:hover{
+.resume-btn:hover, .resume-btn:focus {
     background: rgba(4, 7, 29);
     box-shadow: 0 0 1000px 50px rgba(255, 255, 255, 0.5);
 }
 
-.resume-btn:hover span::before{
+.resume-btn:hover span::before, .resume-btn:focus span::before{
     animation: chitchat linear both 1.2s;
 }
 

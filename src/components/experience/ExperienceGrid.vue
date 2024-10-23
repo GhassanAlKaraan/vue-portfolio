@@ -10,7 +10,7 @@
                 <div class="card">
                     <img src="@/assets/images/experience/software-dev.png" alt="Software Developer">
                     <div class="content">
-                        <h4 class="experience-title">Software Developer <span class="at-symbol">@</span> GTS</h4>
+                        <h4 class="experience-title">Technical Consultant <span class="at-symbol">@</span> GTS</h4>
                         <p>Contributed to JD Edwards ERP customization and worked on Odoo, Flutter projects.</p>
                     </div>
 
@@ -33,7 +33,7 @@
                 <div class="card">
                     <img src="@/assets/images/experience/freelancer.png" alt="Freelance Developer">
                     <div class="content">
-                        <h4 class="experience-title">Freelance App Dev</h4>
+                        <h4 class="experience-title">Freelance Software Dev</h4>
                         <p>Collaborated with clients on mobile and web projects, delivering customized solutions.</p>
                     </div>
                 </div>

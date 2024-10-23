@@ -40,8 +40,9 @@ function openLink() {
 }
 
 /* Hover effect: changes the text color to white */
-.github-link:hover {
+.github-link:hover, .github-link:focus {
     color: #FFFFFF;
+    outline: none;
 }
 
 /* Styling the span that contains the text */
@@ -64,7 +65,8 @@ function openLink() {
 }
 
 /* Hover state for the underline */
-.github-link:hover span::after {
+.github-link:hover span::after, .github-link:focus span::after {
     transform: scaleX(1); /* Expands the underline */
+    outline: none;
 }
 </style>

@@ -57,8 +57,9 @@ function openEmail() {
     overflow: visible;
 }
 
-.tech-used .tech-stack-icons .social-icon:hover {
+.tech-used .tech-stack-icons .social-icon:hover, .tech-used .tech-stack-icons .social-icon:focus {
     transform: translateY(-4px);
+    outline: none;
 }
 
 @media screen and (max-width: 480px) {

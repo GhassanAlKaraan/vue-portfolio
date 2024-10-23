@@ -138,6 +138,8 @@ input:focus, textarea:focus {
 
 textarea {
     height: 150px;
+    max-height: 170px;
+    min-height: 40px;
     resize: vertical;
     font-family: inherit;
 }
@@ -173,12 +175,13 @@ textarea {
     background: inherit;
 }
 
-.submit-btn:hover {
+.submit-btn:hover, .submit-btn:focus {
     background: rgba(4, 7, 29);
 }
 
-.submit-btn:hover span::before {
+.submit-btn:hover span::before, .submit-btn:focus span::before {
     animation: chitchat linear both 1.2s;
+    outline: none;
 }
 
 @keyframes chitchat {

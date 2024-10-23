@@ -67,9 +67,10 @@ import GlitchButton from "@/components/about/GlitchButton.vue";
     transition: all 0.3s ease;
 }
 
-.hero .resume-btn:hover {
+.hero .resume-btn:hover, .hero .resume-btn:focus {
     background: rgba(4, 7, 29);
     box-shadow: 0 0 1000px 50px rgba(255, 255, 255, 0.5);
+    outline: none;
 }
 
 @media screen and (max-width: 1024px) {

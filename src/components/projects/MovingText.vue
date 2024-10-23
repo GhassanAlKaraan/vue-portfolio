@@ -7,9 +7,9 @@ function handleClick() {
 <template>
     <a href="https://github.com/GhassanAlKaraan" target="_blank" @click.prevent="handleClick">
         <article>
-            <p class="example-right">See more on GitHub      See more on GitHub      See more on GitHub      See more on GitHub    
-                See more on GitHub      See more on GitHub      See more on GitHub      See more on GitHub      See more on GitHub    
-                See more on GitHub      </p>
+            <p class="example-right">See more on GitHub   See more on GitHub   See more on GitHub   See more on GitHub  
+                See more on GitHub   See more on GitHub   See more on GitHub   See more on GitHub   See more on GitHub  
+                See more on GitHub   </p>
         </article>
     </a>
 </template>
@@ -19,24 +19,20 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
+ 
 article {
     width: 100%;
     overflow: hidden;
     position: relative;
     min-height: 4em;
     margin-bottom: 2rem;
-
+    outline: none;
     border-top: 1px solid white;
 }
 
 article p {
     /* text-decoration: underline; */
     font-size: 24px;
-}
-
-p:hover {
-    text-decoration: none;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -60,7 +56,6 @@ p:hover {
     }
 }
 
-
 .example-right {
     white-space: nowrap;
     position: absolute;
@@ -81,11 +76,26 @@ p:hover {
     transition: all 0.3s ease;
 }
 
-.example-right:hover {
+/* .example-right:hover {
     padding: 4px 0;
     color: black;
     background-color: #BEC1DD;
     transform: scale(1.2);
+} */
+
+a:hover, a:focus {
+    border-top: none;
+
+    outline: none;
+}
+
+a:hover .example-right, a:focus .example-right {
+    padding: 4px 0;
+    color: black;
+    background-color: #BEC1DD;
+    transform: scale(1.2);
+    border-top: none;
+    outline: none;
 }
 
 /* Safari 4.0 - 8.0 */

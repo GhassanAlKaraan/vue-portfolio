@@ -23,6 +23,7 @@ const sections = ['about', 'projects', 'experience', 'contact'];
 const activeSection = ref('about');
 const isNavbarHidden = ref(false);
 let lastScrollY = 0;
+let scrollTimeout = null;
 
 const setActiveSection = () => {
     const scrollY = window.scrollY;
@@ -40,15 +41,23 @@ const setActiveSection = () => {
 
 const handleScroll = () => {
     const currentScrollY = window.scrollY;
-    
+
     if (currentScrollY > lastScrollY) {
-        isNavbarHidden.value = true;
+        isNavbarHidden.value = true; // Hide navbar when scrolling down
     } else {
-        isNavbarHidden.value = false;
+        isNavbarHidden.value = false; // Show navbar when scrolling up
     }
 
     lastScrollY = currentScrollY;
     setActiveSection();
+
+    // Debounce for detecting scroll stop
+    if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+    }
+    scrollTimeout = setTimeout(() => {
+        isNavbarHidden.value = false; // Show navbar after scroll stop
+    }, 150); // Adjust delay as needed
 };
 
 const scrollToSection = (section) => {
@@ -62,15 +71,14 @@ const scrollToSection = (section) => {
 };
 
 onMounted(() => {
-    window.addEventListener('scroll', setActiveSection);
     window.addEventListener('scroll', handleScroll);
 });
 
 onUnmounted(() => {
-    window.removeEventListener('scroll', setActiveSection);
     window.removeEventListener('scroll', handleScroll);
 });
 </script>
+
 
 <style scoped>
 nav {
@@ -150,8 +158,9 @@ a.active {
 }
 
 
-a:hover {
+a:hover, a:focus {
     color: white;
+    outline: none;
 }
 
 @media screen and (max-width: 480px) {

@@ -240,8 +240,9 @@ p {
     font-size: 1rem;
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
     background-color: white;
+    outline: none;
 }
 
 .tech-used {
@@ -265,8 +266,9 @@ p {
     overflow: visible;
 }
 
-.tech-used .tech-stack-icons .tech-icon:hover {
+.tech-used .tech-stack-icons .tech-icon:hover, .tech-used .tech-stack-icons .tech-icon:focus {
     background-color: #04071D;
+    outline: none;
 }
 
 @media screen and (max-width: 1024px) {

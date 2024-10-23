@@ -50,8 +50,9 @@ const copyEmail = () => {
     justify-content: center;
 }
 
-.copy-email-btn:hover {
+.copy-email-btn:hover, .copy-email-btn:focus {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    outline: none;
 }
 
 .email-to-be-copied,

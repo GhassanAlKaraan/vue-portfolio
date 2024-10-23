@@ -65,13 +65,15 @@ const handleSubmit = () => {
     background: inherit;
 }
 
-.submit-btn:hover {
+.submit-btn:hover, .submit-btn:focus {
     background: rgba(4, 7, 29);
     box-shadow: 0 0 1000px 50px rgba(255, 255, 255, 0.5);
+    outline: none;
 }
 
-.submit-btn:hover span::before {
+.submit-btn:hover span::before, .submit-btn:focus span::before {
     animation: chitchat linear both 1.2s;
+    outline: none;
 }
 
 @keyframes chitchat {

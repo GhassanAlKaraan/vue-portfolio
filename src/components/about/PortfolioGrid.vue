@@ -338,6 +338,12 @@ import CopyButton from "@/components/about/CopyButton.vue";
     object-fit: center/cover;
 }
 
+@media screen and (min-width: 1025px) {
+    .div5 {
+        padding: 1.5rem;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .div1 .collab-text {
         font-size: 24px;
