@@ -5,7 +5,7 @@ import GlitchButton from "@/components/about/GlitchButton.vue";
 <template>
     <div class="hero">
 
-        <h3 class="hero-role">Bringing Any App Idea to Life with Flutter & Vue.js</h3>
+        <h3 class="hero-role">Bringing Any App Idea to Life with Flutter & MERN Stack</h3>
         <h2 class="hero-title">
             Transforming Concepts into Seamless <span class="secondary-title">User Experiences</span>
         </h2>

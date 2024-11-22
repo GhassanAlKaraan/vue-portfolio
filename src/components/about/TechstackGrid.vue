@@ -2,11 +2,11 @@
 
     <div class="tech-stack-grid">
         <div class="card div1">Flutter</div>
-        <div class="card div2">VueJs</div>
+        <div class="card div2">MERN</div>
         <div class="card div3">Dart</div>
-        <div class="card div4">Javascript</div>
+        <div class="card div4">Vue.js</div>
         <div class="card div5">ExpressJs</div>
-        <div class="card div6">SQL / noSQL</div>
+        <div class="card div6">Typescript</div>
         <div class="card div7"></div>
         <div class="card div8"></div>
     </div>
@@ -77,11 +77,11 @@
     grid-row-start: 1;
 }
 
-@media  screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .card {
         padding: 0.5rem;
         font-size: 12px;
     }
-    
+
 }
 </style>
